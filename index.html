@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <title>Sachin's Data Analysis-Social Cops</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <link href="css/main.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+
+    <!-- D3JS library -->
+    <script type="text/javascript" src="js/d3.min.js"></script>
+    <script src="https://d3js.org/d3-scale.v1.min.js"></script>
+
+    <!-- AngularJS library -->
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/angular-route.js"></script>
+     
+    <!-- FusionCharts library-->
+    <script type="text/javascript" src="js/fusioncharts.js"></script>
+    <script type="text/javascript" src="js/fusioncharts.charts.js"></script>
+
+    <!-- Angular plugin -->
+    <script type="text/javascript" src="js/angular-fusioncharts.min.js"></script>
+  </head>
+
+  <body data-spy="scroll" data-offset="0" data-target="#theMenu" ng-app="socialCops_task" ng-controller="data_ctrl" >
+		
+		<ng-view></ng-view>
+
+	<!-- Menu -->
+	<nav class="menu" id="theMenu">
+		<div class="menu-wrap">
+			<br>
+			<br>
+			<a href="#home" class="smoothScroll">Home</a>
+			<a href="#about" class="smoothScroll">About</a>
+			<a href="#analysis" class="smoothScroll">Analysis</a>
+		</div>
+		
+		<!-- Menu button -->
+		<div id="menuToggle"></div>
+	</nav>
+
+	
+	<!-- HEADER SECTION -->
+	<section id="home" name="home"></section>
+	<div id="headerwrap">
+		<div class="container">
+			<br>
+			<h1>Sachin Tendulkar</h1>
+			<h2>The Lord of Cricket</h2>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /headerwrap -->
+	
+	<!-- ABOUT SECTION -->
+	<section id="about" name="about"></section>
+	<div id="g">
+		<div class="container">
+			<div class="row">
+				<h3>ABOUT SACHIN RAMESH TENDULKAR</h3>
+				<br>
+				<div class="col-lg-2"></div>
+				<div class="col-lg-8">
+				<p>Sachin Ramesh Tendulkar (born 24 April 1973) is a former Indian cricketer and captain, widely regarded as one of the greatest batsmen of all time. He took up cricket at the age of eleven, made his Test debut on 15 November 1989 against Pakistan in Karachi at the age of sixteen, and went on to represent Mumbai domestically and India internationally for close to twenty-four years. He is the only player to have scored one hundred international centuries, the first batsman to score a double century in a One Day International, the holder of the record for the number of runs in both ODI and Test lkcricket, and the only player to complete more than 30,000 runs in international cricket.</p>
+				</div>
+			</div>
+		</div><!-- /container -->
+	
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<img src="img/s1.png">
+					<h3>{{total_matches(alldata)}}</h3>
+					<p>Total Matches Played</p>
+				</div>
+				<div class="col-lg-3">
+					<img src="img/s2.png">
+					<h3>{{total_runs(alldata)}}</h3>
+					<p>Toral Runs Scored</p>
+				</div>
+				<div class="col-lg-3">
+					<img src="img/s3.png">
+					<h3>{{total_wickets(alldata)}}</h3>
+					<p>Total Wickets Taken</p>
+				</div>
+				<div class="col-lg-3">
+					<img src="img/s4.png">
+					<h3>{{centuries(alldata)}}</h3>
+					<p>Total Wins</p>
+				</div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /g -->
+	
+	<!-- Analysis Section -->
+	<section id="analysis" name="analysis"></section>
+	<div id="dg">
+		<div class="container">
+			<div class="row">
+				<h3>ANALYSIS</h3>
+				<br>
+				<h4>PERFORMANCE WITH OPPONENT TEAMS</h4>
+				<p>Sachin's total score depicting his performance with the opponents in ODI</p>
+				<div id="chart"></div> 
+				<hr>
+				<h4>STRIKE-RATE AND AVERAGE ANALYSIS</h4>
+				<p>Batting strike rate is a measure of how frequently a batsman achieves the primary goal of batting, namely scoring runs. The following analysis depicts his performance in terms of average nd strike-rate with top players of that time.</p>
+				<div id="chart-container"></div>
+			</div>	
+		</div><!-- /container -->
+	</div><!-- /dg -->
+	
+	
+	<!-- WHITE SECTION -->
+	<div id="w">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+				<h3 align="center">“Sachin Tendulkar is a former Indian cricketer, and in all sense is the greatest cricketer of all time.”. </h3>
+				</div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /w -->
+	
+	<div id="c">
+		<div class="container" align="center">
+			<p>Created by Ausaf Ahmed for<a href="https://www.socialcops.com" target="_blank"><img alt="SocialCops" src="img/logo_sc.png"></a></p>
+		</div>
+	</div>
+		
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/app/app.js"></script>
+    <script src="js/services/data.js"></script>
+    <script src="js/controllers/calc.js"></script>
+</body>
+</html>

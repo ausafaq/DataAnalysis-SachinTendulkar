@@ -1,0 +1,212 @@
+body {
+  background-color: #f2f2f2;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: sans-serif;
+    font-weight: 300;
+    color: #333;
+}
+
+
+/* Paragraph & Typographic */
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.centered {
+    text-align: center;
+}
+
+/* Links */
+a {
+    color: #f85c37;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+/* Wrap Sections */
+
+#headerwrap {
+	background: url(../img/sachin_header.png) no-repeat center top;
+	margin-top: -10px;
+	padding-top:20px;
+	text-align:right;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 700px;
+	width: 100%;
+	background-size: cover;
+}
+
+#headerwrap h1 {
+	margin-top: 240px;
+	color: #d4be07;
+	font-size: 70px;
+	font-weight: 700;
+}
+
+#headerwrap h2 {
+	color: #ffffff;
+	font-size: 50px;
+	font-weight: 100;
+}
+
+/* Grey Wrap */
+
+#g {
+	background: #f2f2f2;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	text-align: center;
+}
+
+/* Dark Grey Wrap */
+#dg {
+	background: #ffffff;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	text-align: center;
+}
+
+
+/* chart styling */
+
+#chart rect {
+	fill: #ffe242;
+	transition: all 0.2s ease;
+}
+#chart rect:hover {
+	fill: #ffff99;
+}
+#chart text {
+	fill: #252525;
+	font: 10px sans-serif;
+	text-anchor: end;
+}
+.axis text {
+	font: 10px sans-serif;
+}
+.axis path,
+.axis line {
+	fill: none;
+	stroke: #252525;
+	shape-rendering: crispEdges;
+}
+#chart {
+	padding-top: 20px;
+}
+
+/* Copyright Wrap */
+
+#c {
+	background: #222222;
+	padding-top: 15px;
+	text-align: center;
+}
+
+#c p {
+	color: white
+}
+
+/* MENU CONF*/
+
+.menu {
+	position: fixed;
+	right: -200px;
+	width: 260px;
+	height: 100%;
+	top: 0;
+	z-index: 10;
+	text-align: left;
+}
+
+.menu.menu-open {
+	right: 0px;
+}
+
+.menu-wrap {
+	position: absolute;
+	top: 0;
+	left: 60px;
+	background: #1a1a1a;
+	width: 200px;
+	height: 100%;
+}
+
+.menu a {
+	margin-left: 20px;
+	color: #808080;
+	display: block;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 40px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.menu a:hover {
+	color: #ffffff;
+}
+
+.menu a:active {
+	color: #ffffff;
+}
+
+#menuToggle {
+	position: absolute;
+	top: 20px;
+	left: 0;
+	z-index: 11;
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	color: #ffffff;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	cursor: pointer;
+	background: rgba(212,190,7,1);
+}
+
+#menuToggle:hover {
+	color: #ffffff;
+	background: rgba(212,190,7,0.25);
+}
